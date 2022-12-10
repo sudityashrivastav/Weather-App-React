@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+  color: #fff; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+   width:100vw;
+  height: 100%;
+  background: url("../cloudy.webp")
+   no-repeat center center; 
+  background-size: cover;
+  position: relative; 
+}
+  .lowerSection, .middleSection{
+     width: 90vw;
+    padding: 10px 0;
+    background: 
+     rgba(255,255,255,0.25);
+    border: 1px solid #fff; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto; 
+    border-radius: 1rem;
+    text-align: center;
+  }
+.lowerSection{
+  margin-top: 9rem;
+  margin-bottom: 10px;
+}
+img{ 
+  width: 33vw;
+  height: auto;
+}
+.middleSection{
+  margin-top: 2rem;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+}
+.icon{
+  width: 100vw;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+.icon ion-icon{
+  font-size: 6em;
+  margin-top: 2rem;
+  animation: sun 10s linear infinite;
+}
+@keyframes su{
+  0%{}
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.temp{
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin: 12px 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.search{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input{
+  outline: none;
+  border: none; 
+  padding: 8px 10px;
+  border-radius: 1rem;
+  color: #1e5fc3;
+}
+
+.searchButton{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.searchButton:active{
+  background: #1e5fc3;
+}
+.searchButton ion-icon{
+  font-size: 1.25rem;
+  transition: 0.25s;
+  color: #1e5fc3;
+}
+.searchButton ion-icon:active {
+  color: #fff;
+}
